@@ -35,7 +35,7 @@ This project is a Flask-based web server that integrates with the Line Messaging
 4. Create a `.env` file in the root directory and add your environment variables:
 
     ```env
-    IFY_API_KEY=your_dify_api_key
+    DIFY_API_KEY=your_dify_api_key
     LINE_ACCESS_TOKEN=your_line_access_token
     LINE_CHANNEL_SECRET=your_line_channel_secret
     ```
