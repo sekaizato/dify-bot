@@ -1,4 +1,4 @@
-# Flask Line Bot API Project
+# Dify Line Bot 
 
 This project is a Flask-based web server that integrates with the Line Messaging API and Dify service. It handles incoming webhook events from Line and processes them using the Dify service.
 
