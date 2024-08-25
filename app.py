@@ -38,7 +38,7 @@ app = Flask(__name__)
 # Import Markdown Function
 from utils.markdown import remove_emojis, clean_markdown
 
-
+# API PATH
 @app.route('/')
 def hello():
     return jsonify({
@@ -50,6 +50,7 @@ def hello():
         })
 
    
+# API /POST Receive Line Webhook
 @app.route('/api/line', methods=['POST'])
 def api_line():
     
@@ -65,6 +66,7 @@ def api_line():
 
     return 'OK'
 
+# Handler for Line Webhook Response
 @handler.add(MessageEvent, message=TextMessage)
 def handle_text_message(event):
     msg = event.message.text
